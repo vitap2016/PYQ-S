@@ -1,0 +1,250 @@
+
+body {display: block;
+    background: linear-gradient(to left, #080a0f, #355067);
+  }
+
+  header {
+    margin-top: 10px;
+    border-radius: 25px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  padding: 10px;
+  box-shadow: 7px 5px 30px rgb(0, 0, 0);
+  display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+header img {
+  display: flex;
+  justify-content: center;
+height: 30px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+   justify-content: right;
+ list-style: none;
+ margin-top: -5px;
+ padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+.sans-serif{
+    background: linear-gradient(to left, #c0c0c000, #d9d9d9b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: sans-serif ;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 33%;
+    position: relative;
+    opacity: 0;
+    animation: fade-in 3s ease-in-out forwards;
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0; /* at the start of the animation, the element is completely transparent */
+    }
+    100% {
+      opacity: 1; /* after 1 second, the element is completely opaque */
+    }
+  }
+
+  .grid-container {
+    height: 50%;
+    display: grid;
+    margin: 2%;
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    opacity: 0;
+    animation: fade-in 5s ease-in-out forwards;
+  }
+  
+  .box4 {
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+    width: 80%;
+    height: 70%;
+    background-color: #0c0f16b9;
+    padding: 10px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    box-shadow: 7px 5px 40px rgba(0, 0, 0, 0.428);
+    transition: all 0.8s ease-in-out;
+  }
+  .grid-container h3{
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 30%;
+    color: rgba(255, 255, 255, 0.645);
+  }
+  .grid-small {
+    font-family: sans-serif;
+    height: 70%;
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .boxA {
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: rgba(173, 216, 230, 0.251);
+    padding: 10px;
+    height: 40%;
+    width: 90%;
+    box-shadow: 7px 5px 40px rgba(0, 0, 0, 0.27);
+    transition: all 0.6s ease-in-out;
+    
+  }
+  
+  .boxA:hover{
+    background-color: rgba(173, 216, 230, 0.449);
+    cursor: pointer;
+  }
+
+  .grid-container p {
+    color: rgba(255, 255, 255, 0.303);
+    margin-top: 13%;
+  }
+  .box4:hover{
+    border-color: #018591;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  a {
+    color: #000000; 
+    text-decoration: none;
+}
+@media screen and (max-width: 550px)
+{
+  .sans-serif{
+    background: linear-gradient(to left, #c0c0c077, #d9d9d9d5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: sans-serif ;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 12%;
+    position: relative;
+    opacity: 0;
+    animation: fade-in 3s ease-in-out forwards;
+}
+.box4 {
+  position: relative;
+  text-align: center;
+  font-family: sans-serif;
+  width: 80%;
+  height: 75%;
+  background-color: #0c0f16b9;
+  padding: 10px;
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 30px;
+  box-shadow: 7px 5px 40px rgba(0, 0, 0, 0.428);
+  transition: all 0.8s ease-in-out;
+}
+.grid-container {
+  height: 50%;
+  display: grid;
+  margin: 2%;
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+  opacity: 0;
+  animation: fade-in 5s ease-in-out forwards;
+}
+
+.grid-container h3{
+  position: absolute;
+  margin-top: 0%;
+  margin-left: 20%;
+  color: rgba(255, 255, 255, 0.645);
+}
+
+header {
+  margin-top: 10px;
+  border-radius:8px;
+background-color: rgb(0, 0, 0);
+color: #fff;
+padding: 10px;
+box-shadow: 7px 5px 30px rgb(0, 0, 0);
+display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+}
+
+header img {
+display: flex;
+justify-content: center;
+height: 22.5px;
+}
+
+nav ul {
+display: flex;
+list-style-type: none;
+padding: 0;
+margin: 0;
+ justify-content: right;
+list-style: none;
+margin-top: -5px;
+padding: 0;
+}
+
+nav li {
+display: inline-block;
+margin-right: 13px;
+}
+
+nav a {
+
+color: #fff;
+text-decoration: none;
+font-family: Arial, sans-serif;
+margin-right: 1px;
+font-size: 14px;
+}
+.box4 p{
+  margin-top: 30px;
+}
+
+.boxA {
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: rgba(173, 216, 230, 0.481);
+  padding: 10px;
+  height: 40%;
+  width: 85%;
+  box-shadow: 7px 5px 40px rgba(0, 0, 0, 0.27);
+  transition: all 0.6s ease-in-out;
+  
+}
+.grid-small{
+  margin-top: 20%;
+}
+}

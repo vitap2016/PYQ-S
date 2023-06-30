@@ -1,0 +1,453 @@
+
+body {
+  display: block;
+  background: linear-gradient(to left, #000000, #2d3f4d);
+}
+
+header {
+    margin-top: 10px;
+    border-radius: 25px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  padding: 10px;
+  box-shadow: 7px 5px 30px rgb(0, 0, 0);
+  display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header img {
+    display: flex;
+    justify-content: center;
+  height: 30px;
+}
+
+nav ul {
+  display: flex;
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+    justify-content: right;
+  list-style: none;
+  margin-top: -5px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.sans-serif {
+    position: absolute;
+    left:25%;
+    background: linear-gradient(to left, #c0c0c044, #d9d9d9b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: sans-serif ;
+    font-size: 40px;
+    
+    opacity: 0;
+    animation: fade-in 3s ease-in-out forwards;
+    
+  }
+
+  .sans-serif2 {
+    top: 20%;
+    left: 32%;
+    position: absolute;
+    background: linear-gradient(to left, #c0c0c048, #cfcfcfc0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: sans-serif ;
+    font-size: 25px;
+    opacity: 0;
+    animation: fade-in 5s ease-in-out forwards;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0; /* at the start of the animation, the element is completely transparent */
+    }
+    100% {
+      opacity: 1; /* after 1 second, the element is completely opaque */
+    }
+  }
+
+  .rectangle {
+    top: 45%;
+    left: 25%;
+    border-radius: 20px;
+    width: 280px;
+    height: 170px;
+    background-color: #0c0f16b9;
+    box-shadow: 7px 5px 40px rgba(0, 0, 0, 0.751);
+    border: 2px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    transition: all 0.8s ease-in-out;
+    
+  }
+  @keyframes glowing-border {
+    0% {
+      box-shadow: 0 0 5px rgb(60, 186, 214);
+    }
+    25%{
+      box-shadow: 0 0 12px rgba(94, 173, 187, 0.689);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(60, 226, 255, 0.609);
+    }
+    100% {
+      box-shadow: 0 0 5px rgb(88, 198, 215);
+    }
+  }
+  .rectangle2 {
+    top: 45%;
+    left: 55%;
+    position: absolute;
+    border-radius: 20px;
+    width: 280px;
+    height: 170px;
+    background-color: #0c0f16b9;
+    box-shadow: 7px 5px 40px rgba(0, 0, 0, 0.598);
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: all 0.8s ease-in-out;
+
+  }
+  
+  .rectangle h2{
+    font-size: 22px;
+    position: absolute;
+    text-align: center;
+    top: 35px;
+    font-family: sans-serif;
+    color: rgb(71, 118, 133);
+    opacity: 0;
+    animation: fade-in 5s ease-in-out forwards;
+  }
+  .rectangle2 h2{
+    font-size: 22px;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    left: 10px;
+    font-family: sans-serif;
+    color: rgb(71, 118, 133);
+    opacity: 0;
+    animation: fade-in 5s ease-in-out forwards;
+  }
+
+  .developer{
+    bottom: -0.5%;
+    left: 60%;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.755);
+    font-family: sans-serif;
+    opacity: 0;
+    animation: fade-in 5s ease-in-out forwards;
+  }
+
+  .rectangle:hover{
+    animation: glowing-border 4s infinite;
+    border-color: #018591;
+    cursor: pointer;
+    transform: scale(1.1);
+
+  }
+  .rectangle2:hover{
+    animation: glowing-border 4s infinite;
+    border-color: #018591;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  
+  .Linkedin{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    animation: jello 5s infinite;
+    transition: all 0.8s ease-in-out;
+    
+  }
+  .Linkedin:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    animation: none;
+  }
+  .Instagram{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 2%;
+    right: 6.5%;
+    animation: jello 5s infinite;
+    
+  }
+  .Instagram:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    animation: none;
+  }
+  .Github{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 2%;
+    right: 11%;
+    animation: jello 5s infinite;
+    
+  }
+  .Github:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    animation: none;
+  }
+  .icon {
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+   /* Add some space between the icons */
+  }
+  @keyframes jello {
+    0% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scale(1.15, 0.90) rotate(-5deg);
+    }
+    50% {
+      transform: scale(0.90, 1.15) rotate(5deg);
+    }
+    70% {
+      transform: scale(1.15, 0.90) rotate(5deg);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @media screen and (max-width: 550px)
+  {
+    body {display: block;
+      background: linear-gradient(to left, #080a0f, #355067);
+    }
+
+    header {
+      margin-top: 0px;
+      border-radius: 5px;
+     background-color: rgb(0, 0, 0);
+      color: #fff;
+     padding: 10px;
+     box-shadow: 7px 5px 30px rgb(0, 0, 0);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+  }
+
+  header img {
+    display: flex;
+    justify-content: center;
+  height: 22.5px;
+}
+
+nav ul {
+  display: flex;
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+    justify-content: right;
+  list-style: none;
+  margin-top: -5px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+nav a {
+
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+nav a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+    .sans-serif {
+      top: 8%;
+      position: absolute;
+      left:8%;
+      background: linear-gradient(to left, #c0c0c044, #d9d9d9b7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: sans-serif ;
+      font-size: 27px;
+      
+      opacity: 0;
+      animation: fade-in 3s ease-in-out forwards;
+      
+    }
+
+    .sans-serif2 {
+      top: 18%;
+      left: 8%;
+      position: absolute;
+      background: linear-gradient(to left, #c0c0c048, #cfcfcfc0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: sans-serif ;
+      font-size: 18px;
+      opacity: 0;
+      animation: fade-in 5s ease-in-out forwards;
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0; /* at the start of the animation, the element is completely transparent */
+      }
+      100% {
+        opacity: 1; /* after 1 second, the element is completely opaque */
+      }
+    }
+  
+    .rectangle {
+      top: 33%;
+      left: 22.5%;
+      border-radius: 20px;
+      width: 200px;
+      height: 120px;
+      background-color: #0c0f16b9;
+      box-shadow: 7px 5px 40px rgba(0, 0, 0, 0.751);
+      border: 1px solid rgba(0, 0, 0, 0);
+      position: absolute;
+      animation: fade-in 5s ease-in-out forwards;
+      transition: all 0.8s ease-in-out;
+      animation: glowing-border 4s infinite;
+    }
+    .rectangle2 {
+      top: 58%;
+      left: 22.5%;
+      position: absolute;
+      border-radius: 20px;
+      width: 200px;
+      height: 120px;
+      justify-content: center;
+      background-color: #0c0f16b9;
+      box-shadow: 7px 5px 40px rgba(0, 0, 0, 0.598);
+      border: 1px solid rgba(0, 0, 0, 0);
+      animation: fade-in 5s ease-in-out forwards;
+      transition: all 0.8s ease-in-out;
+      animation: glowing-border 4s infinite;
+  
+    }
+    
+    .rectangle h2{
+      font-size: 16px;
+      position: absolute;
+      text-align: center;
+      top: 25px;
+      font-family: sans-serif;
+      color: rgb(67, 136, 159);
+      opacity: 0;
+      animation: fade-in 6s ease-in-out forwards;
+    }
+    .rectangle2 h2{
+      font-size: 16px;
+      position: absolute;
+      text-align: center;
+      top: 30px;
+      left: 10%;
+      right: 10%;
+      font-family: sans-serif;
+      color: rgb(49, 139, 169);
+      opacity: 0;
+      animation: fade-in 6s ease-in-out forwards;
+    }
+
+    .developer{
+      bottom: 5%;
+      left: 15%;
+      position: absolute;
+      color: rgba(255, 255, 255, 0.755);
+      font-family: sans-serif;
+    }
+  
+    .rectangle:hover{
+      border-color: #018591;
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    .rectangle2:hover{
+      border-color: #018591;
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+    .Linkedin{
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      bottom: 2%;
+      left: 70%;
+      animation: none;
+      transition: all 0.8s ease-in-out;
+      
+    }
+    .Linkedin:hover{
+      cursor: pointer;
+      transform: scale(1.3);
+      animation: none;
+    }
+    .Instagram{
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      bottom: 2%;
+      left: 46%;
+      animation: none;
+      
+    }
+    .Instagram:hover{
+      cursor: pointer;
+      transform: scale(1.3);
+      animation: none;
+    }
+    .Github{
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      bottom: 2%;
+      left: 22%;
+      animation: none;
+      
+    }
+    .Github:hover{
+      cursor: pointer;
+      transform: scale(1.3);
+      animation: none;
+    }
+    .icon {
+      border-radius: 6px;
+      width: 30px;
+      height: 30px;
+     /* Add some space between the icons */
+    }
+  }
